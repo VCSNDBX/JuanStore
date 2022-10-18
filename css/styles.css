@@ -1,0 +1,46 @@
+html {
+    padding: 0;
+    margin: 0;
+}
+.picslide{
+    padding: 5px;
+}
+
+.banner-thumbnail {
+    height: 400px;
+    object-fit: fill;    
+}
+
+.article-thumbnail {
+    height: 400px;
+    width: 100%;
+    object-fit: fill;    
+}
+
+.desc {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+table{
+    table-layout: auto;
+}
+
+.item_display {
+    overflow: hidden;
+    border:1px solid #333; 
+    background-color:#f1f1f1; 
+    border-radius:5px; 
+    padding: 12px;
+    align-items: center;
+    justify-content: center;
+    margin: 12px;
+}
+
+.item_img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+
+}

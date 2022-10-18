@@ -1,0 +1,78 @@
+<!doctype html>
+<html> 
+<head> 
+    <meta charset="UTF-8"></meta>
+    <link rel="stylesheet" href="js/jquery.bxslider.css">
+    <script type ="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css"></link>
+    <link rel="stylesheet" href="css/styles.css"></link>
+    <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+    <title>Admin Dashboard - Add Products</title>
+</head>
+<body> 
+    <div class ="container">
+        <div class="jumbotron"> 
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="images/logo.jpg">
+                </div>
+            <div class="col-md-8">
+                <h1 class="lead text-center">Juan Store</h1>
+                <h3 class="text-center"><i>Affordable and easy online stores</i></h3>
+            </div>
+            <!-- end of row-->
+            </div>
+            <!-- end ofjumbotron-->
+        </div>
+        <!-- end of container-->
+    </div>
+<div class="container">
+    <ul class="nav nav-tabs navbar-right">
+        <li><a href="dashboard.html">Home</a></li>
+        <li  class="active"><a href="AddProducts.html" id="addproducts">Add Products</a></li>
+        <li><a href="products.php">View All Products</a></li>
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+        <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li><a href="Men.php">MEN</a></li>
+                <li><a href="Women.php">WOMEN</a></li>
+            </ul>      
+        </li>
+        <li><a href="Logout.php">Log Out </a></li> 
+    </ul>
+<!-- end of nav tabs-->    
+</div>
+<!-- end of nav tabs-->    
+</div>        
+    <div class="container">
+        <h1>ADD PRODUCT</h1>
+	    <form action="AddProducts.php" method="POST" enctype="multipart/form-data" class="form-horizontal">
+            <table class="table table-bordered table-responsive text-center">
+                <tr>
+                    <td><label class="control-label">Product Name</label></td>
+                    <td><input class="form-control" type="text" name="productname" placeholder="" required> </td>
+                </tr>                
+                <tr>
+                    <td><label class="control-label">Price</label></td>
+                    <td><input class="form-control" type="number" name="price" placeholder="" required/></td>
+                </tr>                    
+                <tr>
+                    <td><label class="control-label">Gender</label></td>
+                    <td><input class="form-control" type="text" name="gender" placeholder=" Put Men or Women" required  /></td>
+                </tr>                    
+                <tr>
+                    <td><label class="control-label">Image</label></td>
+                    <td><input class="input-group" type="file" name='images' required/></td>
+                </tr>                
+                <tr>
+                    <td colspan="2"><button type="submit" name="btnsave" class="btn btn-default">
+                    <span class="glyphicon glyphicon-save"></span> &nbsp; save
+                    </button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

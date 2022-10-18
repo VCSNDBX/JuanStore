@@ -1,0 +1,122 @@
+<!doctype html> 
+<head> 
+    <meta charset="UTF-8"></meta>
+    <link rel="stylesheet" href="js/jquery.bxslider.css">
+    <script type ="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css"></link>
+    <link rel="stylesheet" href="css/styles.css"></link>
+    <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+    <title>Admin Dashboard</title>
+</head>
+<body> 
+<div class ="container">
+    <div class="jumbotron"> 
+        <div class="row">
+            <div class="col-md-4">
+                <img src="images/logo.jpg">
+            </div>
+        <div class="col-md-8">
+            <h1 class="lead text-center">Juan Store</h1>
+            <h3 class="text-center"><i>Affordable and easy online stores</i></h3>
+        </div>
+        <!-- end of row-->
+        </div>
+        <!-- end ofjumbotron-->
+    </div>
+    <!-- end of container-->
+</div>
+<div class="container">    
+        <ul class="nav nav-tabs navbar-right">
+  <li class="active"><a href="Userpage.html">Home</a></li>
+  <li><a href="Shop.php">SHOP</a></li>
+  <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+      <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            <li><a href="UserMen.php">MEN</a></li>
+            <li><a href="UserWomen.php">WOMEN</a></li>
+                   
+        </ul>
+      <li><a href="DisplayOrders.php">View Orders</a></li>
+              
+  <li><a href="Logout.php">Log Out </a></li>      
+  </li>
+  
+</ul>
+    <!-- end of nav tabs-->    
+<div id="main">
+    <div class="container">
+            <div class="row">            
+                <div class="col-md-12">
+                    <div class="picslide">
+                        <ul class="slider"> 
+                            <li>
+                                <img src="images/banner/banner1.jpg" class="banner-thumbnail">
+                            </li>
+                            <li>
+                                <img src="images/banner/banner2.png" class="banner-thumbnail">
+                            </li>
+                            <li>
+                                <img src="images/banner/banner3.jpg" class="banner-thumbnail">
+                            </li>
+                            <li>
+                                <img src="images/banner/banner4.jpg" class="banner-thumbnail">
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- end of picslide-->
+                    <div class="picslider">
+                        <ul class="slider2">                     
+                            <li> 
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="images/banner/article.jpg" class="article-thumbnail">
+                                    </div>
+                                    <div class="col-md-7">
+                                        <p class="desc"> What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li> 
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="images/banner/article1.jpg" class="article-thumbnail">
+                                    </div>
+                                    <div class="col-md-7">
+                                        <p class="desc"> What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="images/banner/article3.jpg" class="article-thumbnail">
+                                    </div>
+                                    <div class="col-md-7">
+                                        <p class="desc"> What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                            <!-- end of picslide-->
+                    </div>
+                    <!-- end of md9-->
+                </div>
+            </div>           
+            <!-- end of row-->
+    </div>
+</div>
+<script type src="js/jquery-2.1.4.min.js"></script>
+<script src="js/jquery.bxslider.js"></script>
+<script>
+$(document).ready(function(){
+    $('.slider').bxSlider({           
+        auto:true,
+    });
+        $('.slider2').bxSlider({
+        mode:'fade',
+    });
+});
+</script>
+</body>
+</html>
